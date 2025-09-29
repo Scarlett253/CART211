@@ -2,7 +2,13 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    background-color: rgb(230, 173, 203);
+
 }
 
 #Wrapper {
@@ -12,6 +18,7 @@ body {
     width: 60%;
     margin-right: 50px;
 }
+
 
 header h1 {
     text-align: right;
@@ -25,7 +32,7 @@ header h2 {
     margin-bottom: 30px;
     text-align: right;
     font-size: 20px;
-    color: darkgray;
+    color: rgb(114, 110, 110);
 }
 
 header h3 {
@@ -33,7 +40,7 @@ header h3 {
     margin-bottom: 10px;
     text-align: left;
     font-size: 20px;
-    color: darkgray;
+    color: rgb(114, 110, 110);
 }
 
 header img {
@@ -47,17 +54,18 @@ nav {
     float: left;
     width: 15%;
     line-height: 30px;
-    position: fixed;
+    position: absolute;
+
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
+    text-decoration: underline;
+    color: rgb(220, 69, 152);
     font-weight: bold;
 }
 
 nav a:hover {
-    color: darkgray;
+    color: rgb(114, 110, 110);
 }
 
 section {
@@ -71,7 +79,7 @@ article p:last-child {
 
 article h3 {
     margin-bottom: 10px;
-    color: darkgray;
+    color: rgb(114, 110, 110);
 }
 
 footer {
