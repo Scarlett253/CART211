@@ -1,6 +1,10 @@
 body {
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
     padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -8,8 +12,9 @@ body {
     margin-right: 5px;
 
     background-color: rgb(230, 173, 203);
-
 }
+
+/*Google Fonts Implementation*/
 
 #Wrapper {
 
@@ -18,7 +23,6 @@ body {
     width: 60%;
     margin-right: 50px;
 }
-
 
 header h1 {
     text-align: right;
@@ -55,7 +59,6 @@ nav {
     width: 15%;
     line-height: 30px;
     position: absolute;
-
 }
 
 nav a {
@@ -123,8 +126,53 @@ article figure figcaption {
     font-size: 12px;
 }
 
-table img {
-    max-width: 100%;
-    max-height: 100%;
+@media (max-width: 480px) {
+
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid #000;
+        background: #000;
+        z-index: 1000;
+        color: white;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    #wrapper {
+
+        margin-top: 50px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+    .books {
+        grid-template-columns: auto auto;
+        gap: 16px;
+    }
+
+
 
 }
