@@ -1,0 +1,48 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "inter" sans-serif;
+    background-color: black;
+    color: white;
+    /* transition */
+}
+
+.content {
+    text-align: center;
+}
+
+button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    /* transition */
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 20px;
+}
+
+.art {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.art:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
+}
