@@ -11,7 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
-<body class="center-screen">
+<body>
+    <div class="container">
+        <h1 class="title">To Be Seen/To Disappear</h1>
+        <a href="page2.html" class="enter-link">
+            <div class="enter-button">ENTER</div>
+        </a>
+    </div>
+</body>
+<script>
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            window.location.href = 'page2.html';
+        }
+    });
+</script>
+<!-- <body class="center-screen">
     <h1>To Be Seen/To Disappear</h1>
     <p class="enter">ENTER</p>
 
@@ -20,8 +35,8 @@
         document.querySelector('.enter').addEventListener("keydown", e => {
             window.location.href = 'main.html';
         });
-    </script>
-    <!-- <h1>To Be Seen</h1>
+    </script> -->
+<!-- <h1>To Be Seen</h1>
         <button id="next">ENTER</button>
     </div>
     <script src="script.js"></script> -->

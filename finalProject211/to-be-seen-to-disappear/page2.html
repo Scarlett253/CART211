@@ -31,14 +31,26 @@
     </div>
 
     <div id="cookie-popup" class="cookie hidden">
-        <p> We use cookies to personalize your expirience.<br>
-            By accepting, you allow us to remember everything yo do.</p>
-        <button id="accept">ACCEPT</button>
-        <button id="decline">DECLINE</button>
+        <p>This website uses cookies to optimize your soul.</p>
+        <button onclick="document.getElementById('cookie').style.display='none'">
+            Accept
+        </button>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        setTimeout(() => {
+            document.getElementById('cookie-popup').classList.remove('hidden');
+        }, 3000);
+
+        setTimeout(() => {
+            window.location.href = "page3.html";
+        }, 3000);
+    </script>
+
 </body>
 
 </html>
+<!--Author of the website, me!-->
+<meta name="author" content="Yvonne Scarlett Arriola Lerin">
+<meta name="copyright" content="Yvonne Scarlett Arriola Lerin, Student Project, 2025">
 <!-- <button id="next">Scroll Down</button> -->
