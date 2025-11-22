@@ -1,48 +1,75 @@
 body {
     margin: 0px;
-    height: 100vh;
+    background: black;
+    color: white;
+    font-family: "inter" sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "inter" sans-serif;
-    background-color: black;
-    color: white;
-    /* transition */
+    height: 100vh;
+    flex-direction: column;
 }
 
-.content {
-    text-align: center;
-}
-
-button {
-    background: none;
-    border: 2px solid white;
-    color: white;
-    padding: 10px 20px;
-    margin-top: 20px;
-    cursor: pointer;
-    /* transition */
-}
-
-button:hover {
-    background-color: white;
-    color: black;
-}
-
+/*page2*/
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
+    display: flex;
     gap: 20px;
 }
 
-.art {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    transition: transform 0.4s ease, filter 0.4s ease;
+.item {
+    position: relative;
 }
 
-.art:hover {
-    transform: scale(1.1);
-    filter: brightness(1.3);
+.item img {
+    width: 250px;
+    height: auto;
+}
+
+.item .title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.item:hover .title {
+    opacity: 1;
+}
+
+/*cookies*/
+#cookie {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 1px solid white;
+    margin-top: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*like*/
+.like {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.glitch {
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(45deg, #ff00c8 0, #00fff9 25%, #ff00c8 50%, #00fff9 75%, #ff00c8 100%);
+    animation: glitch 0.1s infinite;
+}
+
+#fadeImage {
+    width: 300px;
+    transition: opacity 4s;
+}
+
+button {
+    padding: 15px 30px;
+    background: white;
+    border: none;
+    font-size: 1.2rem;
 }
