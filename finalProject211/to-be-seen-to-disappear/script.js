@@ -4,7 +4,7 @@ CART 211 - Final Project*/
 //Likes page4
 function like() {
     let c = document.getElementById("count");
-    let n = number(c.innerText);
+    let n = Number(c.innerText);
     c.innerText = n + 1;
 }
 
