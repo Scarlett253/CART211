@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0px;
     background: black;
     color: white;
@@ -8,7 +8,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-}
+} */
 
 /*page2*/
 .gallery {
@@ -55,12 +55,34 @@ body {
     cursor: pointer;
 }
 
-.glitch {
+@keyframes glitch {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(10px, -5px);
+    }
+
+    50% {
+        transform: translate(-10px, 5px);
+    }
+
+    75% {
+        transform: translate(5px, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* .glitch {
     width: 100%;
     height: 100%;
     background: repeating-linear-gradient(45deg, #ff00c8 0, #00fff9 25%, #ff00c8 50%, #00fff9 75%, #ff00c8 100%);
     animation: glitch 0.1s infinite;
-}
+} */
 
 #fadeImage {
     width: 300px;

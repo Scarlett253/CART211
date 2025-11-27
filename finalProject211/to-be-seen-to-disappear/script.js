@@ -14,7 +14,7 @@ function fadeOutImage() {
     img.style.opacity = 0;
     setTimeout(() => {
         window.location.href = "page10.html";
-    }, 4000);
+    }, 8000);
 }
 
 //multiple clicks page8
