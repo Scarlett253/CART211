@@ -17,3 +17,13 @@ function fadeOutImage() {
     }, 4000);
 }
 
+//multiple clicks page8
+let clicks = 0;
+function clickProgress() {
+    clicks++;
+
+    if (clicks > 15) {
+        window.location.href = "page9.html";
+    }
+}
+

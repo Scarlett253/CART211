@@ -11,21 +11,21 @@ body {
 }
 
 /*page2*/
-.grid {
+.gallery {
     display: flex;
     gap: 20px;
 }
 
-.item {
+.artwork {
     position: relative;
 }
 
-.item img {
+.artwork img {
     width: 250px;
     height: auto;
 }
 
-.item .title {
+.artwork .title {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -33,7 +33,7 @@ body {
     transition: 0.3s;
 }
 
-.item:hover .title {
+.artwork:hover .title {
     opacity: 1;
 }
 
