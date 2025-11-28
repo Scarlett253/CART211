@@ -1,4 +1,4 @@
-/* body {
+body {
     margin: 0px;
     background: black;
     color: white;
@@ -8,7 +8,7 @@
     align-items: center;
     height: 100vh;
     flex-direction: column;
-} */
+}
 
 /*page2*/
 .gallery {
