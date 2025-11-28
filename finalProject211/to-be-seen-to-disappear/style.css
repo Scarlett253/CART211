@@ -1,8 +1,8 @@
 body {
     margin: 0px;
-    background: black;
-    color: white;
-    font-family: "inter" sans-serif;
+    background: rgb(32, 71, 31);
+    color: rgb(228, 230, 228);
+    font-family: "georgia" sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
