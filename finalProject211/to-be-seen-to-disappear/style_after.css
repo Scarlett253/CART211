@@ -1,58 +1,39 @@
 body {
-    margin: 0px;
-    background: rgb(32, 71, 31);
-    color: rgb(228, 230, 228);
-    font-family: "georgia" sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0a0a0f;
+    color: #e6e6e6;
+    font-family: "Arial" sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
     flex-direction: column;
 }
 
-/*page2*/
-.gallery {
-    display: flex;
-    gap: 20px;
+/*titles*/
+h1,
+h2 {
+    color: #e6e6e6;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 0 6px #00eaff, 0 0 12px #ff00ff;
 }
 
-.artwork {
-    position: relative;
-}
-
-.artwork img {
-    width: 250px;
-    height: auto;
-}
-
-.artwork .title {
+.glitch {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    opacity: 0;
-    transition: 0.3s;
-}
+    top: 0;
+    left: 0;
 
-.artwork:hover .title {
-    opacity: 1;
-}
-
-/*cookies*/
-#cookie {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border: 1px solid white;
-    margin-top: 40px;
-}
-
-.hidden {
-    display: none;
-}
-
-/*like*/
-.like {
-    font-size: 3rem;
-    cursor: pointer;
+    background: repeating-linear-gradient(90deg,
+            #ff00ff 0 10px,
+            #00eaff 10px 20px,
+            #ff00ff 20px 30px);
+    opacity: 0.18;
+    animation: glitchMove 0.2s infinite;
 }
 
 @keyframes glitch {
@@ -61,15 +42,15 @@ body {
     }
 
     25% {
-        transform: translate(10px, -5px);
+        transform: translate(-10px, 3px);
     }
 
     50% {
-        transform: translate(-10px, 5px);
+        transform: translate(8px, -4px);
     }
 
     75% {
-        transform: translate(5px, 10px);
+        transform: translate(-6px, 6px);
     }
 
     100% {
@@ -77,21 +58,38 @@ body {
     }
 }
 
-/* .glitch {
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(45deg, #ff00c8 0, #00fff9 25%, #ff00c8 50%, #00fff9 75%, #ff00c8 100%);
-    animation: glitch 0.1s infinite;
-} */
-
-#fadeImage {
-    width: 300px;
-    transition: opacity 4s;
+/* page 7 and 8 */
+body.click-page {
+    background: #0d0d12;
+    cursor: pointer;
 }
 
+body.click-page:hover {
+    background: #13131a;
+}
+
+/* PAGE 9 — fade disappearing image */
+#fadeImage {
+    width: 320px;
+    opacity: 1;
+    transition: opacity 3s ease;
+    filter: drop-shadow(0 0 12px #ff00ff);
+}
+
+/* PAGE 10 button */
 button {
-    padding: 15px 30px;
-    background: white;
-    border: none;
+    padding: 14px 30px;
+    border: 2px solid #ff00ff;
+    background: #0a0a0f;
+    color: #e6e6e6;
     font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #00eaff;
+    color: #ffffff;
 }
